@@ -11,9 +11,11 @@ date : 2021-10-20
 
 ##  Use `mtr`
 
+
+# Install mtr 
+Simply copy the code below into a Terminal window, it may need to be prepended with 'sudo'
 ```bash
-# Install mtr
-shell > dnf -y install mtr
+dnf -y install mtr
 ```
 
 The common options of the `mtr` command are as follows. Under normal circumstances, no additional options are required, followed by the hostname or IP address directly:
@@ -31,7 +33,7 @@ The common options of the `mtr` command are as follows. Under normal circumstanc
 The information exchanged by the terminal is as follows:
 
 ```bash
-shell > mtr -c 10 bing.com
+mtr -c 10 bing.com
  My traceroutr [v0.92]
 li(192.168.100.4) 2021-10-20T08:02:05+0800
 Keys:Help Display mode Restart Statistics Order of fields quit
